@@ -1,0 +1,59 @@
+/*****************************************************************************
+ * 段落：对齐、省略
+ ******************************************************************************/
+
+.p {
+  text-indent: 2em;
+  font-size: 14px;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+  line-height: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.p.big {
+  font-size: 16px;
+}
+
+.p.c {
+  text-align: center;
+  text-indent: 0;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+.justify {
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+
+/******************************************************************************
+ * 段落
+ *******************************************************************************/
+
+
+/* 加个符号 */
+
+.after {
+  position: relative;
+  padding: 0 10px;
+}
+
+.after:after {
+  content: '☆';
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: transparent;
+  position: absolute;
+  top: 1px;
+  left: -1px;
+  z-index: 1;
+  font-family: airal;
+}

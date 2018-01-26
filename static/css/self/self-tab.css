@@ -1,0 +1,131 @@
+/*****************************************************************************
+ * 万能的【选项卡】专题：
+ ******************************************************************************/
+
+.half {
+  display: inline-block;
+  width: 50%;
+}
+
+.tab {
+  margin-bottom: 10px;
+}
+
+.tab-hd {
+  background-color: #f1f1f1;
+  border-top: 2px solid #718A9D;
+}
+
+.tab-hd-item {
+  float: left;
+  border-left: 1px solid #718A9D;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tab-hd-item:not(:last-child) {
+  width: 33%;
+}
+
+.tab-hd-item:last-child {
+  border-right: 1px solid #718A9D;
+  width: 34%;
+}
+
+.tab-hd-item a {
+  color: #666;
+}
+
+.tab-con {}
+
+.tab-con-item {
+  background-color: #f1f1f1;
+  padding: 10px 0;
+  display: none;
+}
+
+
+/*****************************************************************************
+ * 万能的【选项卡】专题：
+ ******************************************************************************/
+
+.flex-tab {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.flex-tab-hd {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*border-bottom:2px solid #3879D9;*/
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.flex-tab-hd>li {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*border-right:1px solid #e5e5e5;*/
+  position: relative;
+}
+
+.flex-tab-hd>li:after {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+.flex-tab-hd>li.active {
+  background-color: #EBEBEB;
+}
+
+.flex-tab-hd>li.active:after {
+  border-bottom: 1px solid #0B5796;
+}
+
+.flex-tab-hd>li.active>a {
+  color: #3879D9;
+}
+
+.flex-tab-hd>li:last-child {
+  border-right: 0;
+}
+
+.flex-tab-hd>li>a {
+  display: block;
+  padding: 10px;
+}
+
+.flex-tab-hd>li>a:focus {
+  text-decoration: none;
+}
+
+.tab-con {
+  background-color: #D1D7DE;
+}
+
+.tab-con-item {
+  padding: 16px 0;
+  display: none;
+}
+
+.tab-con-item.active {
+  display: block;
+}

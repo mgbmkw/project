@@ -1,0 +1,589 @@
+/******************************************************************************
+ * 水平滚动
+ *******************************************************************************/
+
+.scroll-outer-container {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid blue;
+  line-height: 30px;
+}
+
+.scroll-inner-container {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  left: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-content {
+  height: 30px;
+  /* 由JS计算总长 */
+  /* 注：宽度如果没有【大于或等于】全部子元素长度的话，则无法实现此效果！ */
+}
+
+
+/* for Chrome */
+
+.scroll-inner-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/******************************************************************************
+ * 修改bootstrap的glyphicon
+ *******************************************************************************/
+
+.glyphicon.modify {
+  top: -1px;
+  margin-left: 6px;
+}
+
+
+/******************************************************************************
+ * 首先，来个非常重要的N个class
+ *******************************************************************************/
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.wh100flau {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.h100flau {
+  height: 100%;
+  overflow: auto;
+}
+
+
+/******************************************************************************
+ * 块和内嵌转换
+ *******************************************************************************/
+
+.n {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+
+/*小屏幕下不可见*/
+
+@media (max-width: 767px) {
+  .xs-hide {
+    display: none !important;
+  }
+  .xs-n {
+    display: none !important;
+  }
+}
+
+.blk {
+  display: block;
+}
+
+.blk-half {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inli {
+  display: inline;
+}
+
+.inblk {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .blk {
+    display: block;
+  }
+  .inli {
+    display: inline;
+  }
+  .inblk {
+    display: inline-block;
+  }
+  .n {
+    display: none;
+  }
+}
+
+
+/******************************************************************************
+ * 文字对齐：左、右、中
+ *******************************************************************************/
+
+.l {
+  text-align: left;
+}
+
+.r {
+  text-align: right;
+}
+
+.c {
+  text-align: center;
+}
+
+
+/* 边框圆角50% */
+
+.radius50 {
+  border-radius: 50%;
+}
+
+
+/* 标准行高： line-height:34px; */
+
+.hg {
+  height: 34px;
+  line-height: 34px;
+}
+
+.hg16 {
+  height: 16px;
+  line-height: 16px;
+}
+
+.hg50 {
+  height: 50px;
+  line-height: 50px;
+}
+
+
+/* 
+  浮动和清浮动
+ */
+
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background-color: #fff;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt60 {
+  margin-top: 60px;
+}
+
+.minh30 {
+  min-height: 30px;
+}
+
+.h30 {
+  height: 30px;
+}
+
+.mrl10 {
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.mlr10 {
+  margin-right: -10px;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.pd0 {
+  padding: 0;
+}
+
+.wh100 {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.padding {
+  padding: 6px 10px;
+}
+
+.zindex9999 {
+  z-index: 9999;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+
+/******************************************************************************
+ * 移入的效果图标 ： 手指、禁止、帮助
+ *******************************************************************************/
+
+.pointer {
+  cursor: pointer;
+}
+
+
+/*  */
+
+
+/******************************************************************************
+ * margin 和 padding
+ *******************************************************************************/
+
+.m {
+  margin: 0 auto;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml-10 {
+  margin-left: -10px;
+}
+
+.ml15 {
+  margin-left: 15px;
+}
+
+.ml-15 {
+  margin-left: -15px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.ml-30 {
+  margin-left: -30px;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mr6 {
+  margin-right: 6px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mr-10 {
+  margin-right: -10px;
+}
+
+.mr15 {
+  margin-right: 15px;
+}
+
+.mr-15 {
+  margin-right: -15px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mr-30 {
+  margin-right: -30px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt-10 {
+  margin-top: -10px;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt-15 {
+  margin-top: -15px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt-30 {
+  margin-top: -30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt-50 {
+  margin-top: -50px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb-10 {
+  margin-bottom: -10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mb-15 {
+  margin-bottom: -15px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mb-30 {
+  margin-bottom: -30px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mb-50 {
+  margin-bottom: -50px;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.p-10 {
+  padding: -10px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.p-15 {
+  padding: -15px;
+}
+
+.p30 {
+  padding: 30px;
+}
+
+.p-30 {
+  padding: -30px;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.pl-10 {
+  padding-left: -10px;
+}
+
+.pl15 {
+  padding-left: 15px;
+}
+
+.pl-15 {
+  padding-left: -15px;
+}
+
+.pl30 {
+  padding-left: 30px;
+}
+
+.pl-30 {
+  padding-left: -30px;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr-10 {
+  padding-right: -10px;
+}
+
+.pr15 {
+  padding-right: 15px;
+}
+
+.pr-15 {
+  padding-right: -15px;
+}
+
+.pr30 {
+  padding-right: 30px;
+}
+
+.pr-30 {
+  padding-right: -30px;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt-10 {
+  padding-top: -10px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pt-15 {
+  padding-top: -15px;
+}
+
+.pt30 {
+  padding-top: 30px;
+}
+
+.pt-30 {
+  padding-top: -30px;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.pb-10 {
+  padding-bottom: -10px;
+}
+
+.pb15 {
+  padding-bottom: 15px;
+}
+
+.pb-15 {
+  padding-bottom: -15px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb-30 {
+  padding-bottom: -30px;
+}
+
+.lh10 {
+  line-height: 10px;
+}
+
+.lh20 {
+  line-height: 20px;
+}
+
+.lh30 {
+  line-height: 30px;
+}
+
+.lh40 {
+  line-height: 40px;
+}
+
+.lh50 {
+  line-height: 50px;
+}
+
+.lh60 {
+  line-height: 60px;
+}
+
+
+/******************************************************************************
+ * 定位：
+ *******************************************************************************/
+
+.relative {
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

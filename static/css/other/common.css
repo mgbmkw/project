@@ -1,0 +1,179 @@
+/* **************************************** 常用样式 **************************************** */
+
+
+/******************************************************************************
+ * 浮动
+ *******************************************************************************/
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-menu {
+  float: left;
+}
+
+
+/*hr{border-color:#e5e5e5;}*/
+
+.caret.up {
+  border-top: 0px solid;
+  border-bottom: 4px solid;
+  border-color: transparent transparent #D95145 transparent;
+}
+
+.caret.down {
+  border-bottom: 0px solid;
+  border-top: 4px solid;
+  border-color: #D95145 transparent transparent transparent;
+}
+
+.list-unstyled>.divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.btn-pr
+/******************************************************************************
+ * 表单 ： type="text" 
+ *******************************************************************************/
+
+.input-descr {
+  display: block;
+  padding-left: 71px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #b7b7b7;
+}
+
+.input-descr span {
+  color: #DD4F43;
+}
+
+
+/******************************************************************************
+ * 导航：面包屑、路径
+ *******************************************************************************/
+
+.breadcrumb>li+li:before {
+  content: ">>\00a0";
+  color: #cccccc;
+}
+
+
+/* 评分条样式 */
+
+.score-wrap {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 6px;
+  background-color: #696969;
+}
+
+.score-wrap img:nth-child(1) {
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 1;
+}
+
+.score-wrap img:nth-child(2) {
+  width: 50%;
+  height: 13px;
+  background-color: #FFF100;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.score-drop {
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  padding: 10px;
+}
+
+.score-drop p {}
+
+.click span {
+  float: left;
+  height: 25px;
+  font-size: 16px;
+}
+
+.click .descr {
+  float: right!important;
+}
+
+
+/*.click a{float:left;width:19px;height:19px;line-height:19px;background:url(../images/star1.png) no-repeat 0px 0px;background-size:19px 19px;}
+.click a.active{background-color:#FFF100;}*/
+
+
+/*****************************************************************************
+ * 横向排列的flex-nav子元素：
+ ******************************************************************************/
+
+.flex-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*margin-bottom:0;margin-left: 0;*/
+}
+
+.flex-nav>li {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /*border-right:1px solid #e5e5e5;*/
+  position: relative;
+}
+
+.flex-nav>li:after {
+  content: "";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+.flex-nav>li.active,
+.flex-nav>li:hover {
+  background-color: #EBEBEB;
+}
+
+.flex-nav>li.active:after {
+  border-bottom: 1px solid #0B5796;
+}
+
+.flex-nav>li.active>a {
+  color: #3879D9;
+}
+
+.flex-nav>li>a {
+  display: block;
+  padding: 10px;
+}
+
+.flex-nav>li>a:focus {
+  text-decoration: none;
+}

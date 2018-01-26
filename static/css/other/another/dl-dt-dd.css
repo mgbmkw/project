@@ -1,0 +1,67 @@
+/*****************************************************************************
+ * 词与词义：dl→dt→dd
+ ******************************************************************************/
+
+.dl-num {
+  padding: 0 10px 10px 22px;
+  overflow: hidden;
+}
+
+.dl-num dt {
+  margin-left: -16px;
+  width: 16px;
+  float: left;
+  color: #333;
+  line-height: 22px;
+}
+
+.dl-num dd {
+  width: 100%;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #333;
+  line-height: 22px;
+}
+
+.dl-word {
+  padding: 0 10px 10px 100px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.dl-word dt {
+  margin-left: -100px;
+  width: 100px;
+  float: left;
+  color: #333;
+  line-height: 30px;
+}
+
+.dl-word dd {
+  width: 100%;
+  text-align: justify;
+  word-wrap: break-word;
+  word-break: break-all;
+  color: #333;
+  line-height: 30px;
+}
+
+
+/* 大屏幕时居中对齐； 小屏幕时左对齐 */
+
+.dl-horizontal dt {
+  float: left;
+  /*width: 90px;*/
+  width: auto;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dl-horizontal dd {
+  /*margin-left: 100px;*/
+  margin-left: auto;
+}

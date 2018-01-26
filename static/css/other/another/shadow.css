@@ -1,0 +1,24 @@
+/*  */
+
+.effect {
+  position: relative;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+  /*添加一个范围=4px的小阴影;再添加一个范围=10px的内阴影;*/
+}
+
+.effect:before,
+.effect:after {
+  content: "";
+  background: #f00;
+  position: absolute;
+  z-index: -2;
+  top: 50%;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  /*设置四个方向值,然后浏览器自动计算盒子的大小;https://www.cnblogs.com/yizihan/p/4275442.html*/
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  /*设置添加的盒子的阴影;*/
+  border-radius: 100px/10px;
+  /*添加圆角:水平方向圆角大小是100px/垂直方向圆角大小是10px;*/
+}

@@ -1,0 +1,107 @@
+/******************************************************************************
+ * 流体布局的媒体类型：图文
+ *******************************************************************************/
+
+.flex-media {
+  position: relative;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  /*border-bottom:1px solid #0F91CB;*/
+}
+
+.flex-media:before {
+  content: '';
+  width: 200%;
+  height: 0px;
+  border-bottom: 1px solid #0A5290;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  -ms-transform: scale(.5);
+  -ms-transform-origin: 0 0;
+  -o-transform: scale(.5);
+  -o-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*background-color:#fff;padding-top:10px;padding-bottom:10px;*/
+}
+
+.flex-box>li {
+  display: inline-block;
+}
+
+.flex-box>li a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+.flex-box>li:nth-child(1) {
+  width: 66px;
+  align-self: center;
+}
+
+.flex-box>li:nth-child(2) {
+  flex: 1;
+}
+
+.flex-box>li:nth-child(2)>a {
+  text-align: left;
+}
+
+.flex-box>li:nth-child(2)>a>p {
+  min-height: 20px;
+}
+
+.flex-box>li:nth-child(2)>a:hover {
+  text-decoration: none;
+}
+
+.flex-box>li:nth-child(3) {
+  width: 90px;
+}
+
+
+/* 容器box */
+
+.box {
+  position: relative;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+  /*border-bottom:1px solid #0F91CB;*/
+}
+
+.box.bk:before {
+  content: '';
+  width: 200%;
+  height: 0px;
+  border-bottom: 1px solid #0A5290;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  -ms-transform: scale(.5);
+  -ms-transform-origin: 0 0;
+  -o-transform: scale(.5);
+  -o-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}

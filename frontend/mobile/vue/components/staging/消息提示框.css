@@ -1,0 +1,90 @@
+
+/* http://blog.csdn.net/laokdidiao/article/details/51189476 */
+/* 消息提示框：一个圆角矩形加左边中间的一个小三角形。 */
+#CommentBubble {
+  width: 140px;
+  height: 100px;
+  margin: 30px 20px;
+  float: left;
+  background: #8867b9;
+  position: relative;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+}
+#CommentBubble:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 100%;
+  top: 38px;
+  position: absolute;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #8867b9;
+  border-bottom: 13px solid transparent;
+}
+
+/* 心形：心形的制作是非常复杂的，可以使用伪元素来制作，分别将伪元素旋转不同的角度，并修改transform-origin属性来设置元素的旋转中心点。 */
+#Heart {
+  float: left;
+  position: relative;
+}
+#Heart:before,
+#Heart:after {
+  content: "";
+  width: 70px;
+  height: 115px;
+  position: absolute;
+  background: red;
+  left: 70px;
+  top: 0;
+  -webkit-border-radius: 50px 50px 0 0;
+  -moz-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+#Heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+/* 扇形：在三角形的基础上，让其中一边成弧形 。 */
+
+#Sector {
+  width: 0;
+  height: 0;
+  float: left;
+  background-color: #ffffff;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid #ab9ed1;
+  border-radius: 50%;
+}
+
+/* 底右直角三角形。还有其他的，在其上面上下左右 */
+#BottomRightTriangle {
+  width: 0px;
+  height: 0px;
+  margin: 10px 10px;
+  float: left;
+  border-bottom: 100px solid #ff7578;
+  border-left: 100px solid transparent;
+}

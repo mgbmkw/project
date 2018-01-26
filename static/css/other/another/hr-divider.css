@@ -1,0 +1,64 @@
+/******************************************************************************
+ * 华丽的水平线：
+ *******************************************************************************/
+
+div.hr,
+p.hr,
+h4.hr {
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 22px;
+}
+
+div.hr:before,
+p.hr:before,
+h4.hr:before {
+  content: '';
+  width: 200%;
+  height: 0px;
+  border: 1px solid #e5e5e5;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  -ms-transform: scale(.5);
+  -ms-transform-origin: 0 0;
+  -o-transform: scale(.5);
+  -o-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}
+
+div.hr {
+  margin-bottom: 30px;
+}
+
+div.hr:before {
+  margin-top: 10px;
+}
+
+.hr {
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 22px;
+}
+.hr:before {
+  content: '';
+  width: 200%;
+  height: 0px;
+  border: 1px solid #375fee;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  -webkit-transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  -ms-transform: scale(.5);
+  -ms-transform-origin: 0 0;
+  -o-transform: scale(.5);
+  -o-transform-origin: 0 0;
+  transform: scale(.5);
+  transform-origin: 0 0;
+}

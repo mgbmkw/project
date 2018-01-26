@@ -1,0 +1,171 @@
+/******************************************************************************
+ * 有点像badge那样的span标签
+ *******************************************************************************/
+
+.beautiful-span {
+  font-size: 12px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+  height: 25px;
+  line-height: 25px;
+}
+
+.beautiful-span-full {
+  font-size: 12px;
+  padding: 2px 5px;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #13529E;
+  height: 25px;
+  line-height: 25px;
+}
+
+
+/******************************************************************************
+ * beautiful-span-list
+ *******************************************************************************/
+
+.beautiful-span-list-wrap {
+  border-radius: 3px;
+  display: inline-block;
+  border: 1px solid #13529E;
+  line-height: normal;
+}
+
+.beautiful-span-list-item-l {
+  background-color: #13529E;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+  line-height: 16px;
+}
+
+.beautiful-span-list-item-r {
+  color: #13529E;
+  font-size: 12px;
+  padding: 2px 5px;
+  line-height: 16px;
+}
+
+
+/******************************************************************************
+ * beautiful-span-list
+ *******************************************************************************/
+
+.beautiful-badge {
+  display: inline-block;
+  padding: 0 12px;
+  border: 1px solid #333;
+  border-radius: 16px;
+}
+
+.beautiful-badge-item {
+  line-height: 16px;
+  font-size: 12px;
+}
+
+.beautiful-badge .glyphicon {
+  /* 这个是更改bootstrap的 */
+  top: 2px;
+}
+
+
+/******************************************************************************
+ * 图片上的定位【信息】装饰用的
+ *******************************************************************************/
+
+.span-tip-wrap {
+  position: relative;
+}
+
+.span-tip1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+}
+
+.span-tip2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+}
+
+.span-tip3 {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+}
+
+.span-tip4 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+}
+
+.span-tip0 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  border: 1px solid #13529E;
+  color: #13529E;
+  transform: translate(-50%, -50%);
+}
+
+
+/******************************************************************************
+ * 图片上的定位【信息】装饰用的： 左上角一半
+ *******************************************************************************/
+
+.span-tip-left-top {
+  position: absolute;
+  font-size: 14px;
+  top: -19px;
+  left: 0;
+  padding: 5px 30px 5px 15px;
+  border-radius: 0 30px 0px 0;
+  background-color: #13529E;
+  color: #fff;
+}
+
+.span-tip-right-top {
+  position: absolute;
+  font-size: 14px;
+  top: -30px;
+  right: 0;
+  padding: 5px 30px;
+  border-radius: 0 30px;
+  background-color: #13529E;
+  color: #fff;
+}

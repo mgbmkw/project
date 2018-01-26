@@ -1,0 +1,7 @@
+
+
+/*input后面加个span做为单位，如：元*/
+.unit {
+  float: left;
+  line-height: 34px;
+}

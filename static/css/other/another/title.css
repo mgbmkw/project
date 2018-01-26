@@ -1,0 +1,14 @@
+.line-text-line {
+  display: flex;
+  margin-top: 50px;
+}
+.line-text-line .line {
+  flex: 1;
+  border-bottom: 1px solid #e5e5e5;
+  height: 10px;
+}
+.line-text-line .text {
+  width: 75px;
+  background-color: #fff;
+  text-align: center;
+}

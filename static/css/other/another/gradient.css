@@ -1,0 +1,12 @@
+/******************************************************************************
+ * 渐变色 ： 有空封装出 45、 -45 、90、 180度角的渐变，还有其他的颜色
+ *******************************************************************************/
+
+.gradient-blue {
+  background: -moz-linear-gradient(rgb(110, 130, 219), #13529E);
+  background: -webkit-gradient(linear, center top, center bottom, from(rgb(110, 130, 219)), to(#13529E));
+  background: -webkit-linear-gradient(rgb(110, 130, 219), #13529E);
+  background: -o-linear-gradient(rgb(110, 130, 219), #13529E);
+  background: -ms-linear-gradient(rgb(110, 130, 219), #13529E);
+  background: linear-gradient(rgb(110, 130, 219), #13529E);
+}

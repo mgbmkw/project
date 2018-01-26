@@ -1,0 +1,48 @@
+@media (min-width: 768px) {
+  .fl {
+    float: left !important;
+  }
+  .fr {
+    float: right !important;
+    margin-right: -15px;
+  }
+  .fr~.fr {
+    margin-right: 0;
+  }
+  .left-block {
+    text-align: left;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .fl-xs {
+    float: left !important;
+  }
+  .fr-xs {
+    float: right !important;
+  }
+  .fr {
+    float: right !important;
+    margin-right: 0px;
+  }
+  .navbar-right.fr {
+    float: right!important;
+  }
+  .navbar-header.fl {
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .fl {
+    float: left !important;
+  }
+  .fr {
+    float: right !important;
+    margin-right: 0px;
+  }
+  .fr~.fr {
+    margin-right: 0;
+  }
+}

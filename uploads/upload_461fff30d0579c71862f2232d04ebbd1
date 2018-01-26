@@ -1,0 +1,51 @@
+<script>
+Date()
+
+
+// 【五笔】Date()
+// 【snippet】
+// 再从搜索库里查找一下
+
+
+
+// 【五笔】html+css+js
+// 【五笔】html>css>js>jquery>bootstrap
+
+
+// 【职业要求】JavaScript 一直在升级，所以我们需要时刻了解 JavaScript 的新技术
+// 【系统认识】javascript对象 = JavaScript内置对象 + Browser对象 + HTML DOM 对象
+
+
+// 【所谓的术语】轻量级编程语言
+// 【所谓的术语】重量级编程语言
+// 
+// 
+// 【对比VS】一提到调试用的代码句，就想到document.write()、alert()、console.log()
+// 
+// 【系统认识】javascript里的事件是怎么来的：像onclick这些事件，是由浏览器提供的
+// 
+// document.getElementById()。这些个方法是 HTML DOM 中定义的。而 HTML DOM (Document Object Model)（文档对象模型）是用于访问 HTML 元素的正式 W3C 标准。 所以说，这就是所谓的DOM方法！
+// 
+// 【实例】
+// 
+// 【问】改变某个元素的状态，可以有什么思路？
+// 【答】可以用更换图片的原理，就像【点击灯泡>(控制)>灯泡打开/关闭｜亮/不亮】
+// 【答】也可以用
+// 【/实例】
+// 
+function changeImage(str_id) {
+	el=document.getElementById(str_id);
+	if (el.src.match("bulbon")) {
+  		el.src="/images/pic_bulboff.gif";
+  	} else {
+  		el.src="/images/pic_bulbon.gif";
+   }
+}
+
+
+// 【表单验证】：要求填写的是数字
+	var val = $("#input").val();
+	if(val==""||isNaN(val)) Message.info("不是数字");
+
+
+</script>

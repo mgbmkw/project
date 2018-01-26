@@ -1,0 +1,220 @@
+/*****************************************************************************
+ * swiper插件的特定样式【水平播放】： 分页 + 上下页按钮 + 图片slides
+ ******************************************************************************/
+
+.swiper-container {
+  overflow: hidden;
+}
+
+
+/*****************************************************************************
+ * swiper插件的特定样式【水平播放】： 分页
+ ******************************************************************************/
+
+.swiper-pagination {
+  bottom: 5px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  display: inline-block;
+  background-color: #428bca;
+  color: #fff;
+  border-radius: 50%;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  position: relative;
+  transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+}
+
+.swiper-pagination .swiper-pagination-bullet+.swiper-pagination-bullet {
+  margin-left: 10px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #428bca;
+}
+
+
+/*****************************************************************************
+ * swiper插件的特定样式【水平播放】： 上下页按钮
+ ******************************************************************************/
+
+.swiper-button-prev {
+  left: -100px;
+  transition: left .3s linear;
+  -webkit-transition: left .3s linear;
+}
+
+.swiper-button-next {
+  right: -100px;
+  transition: right .3s linear;
+  -webkit-transition: right .3s linear;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  border-radius: 50%;
+  padding: 10px;
+  opacity: .75;
+  filter: alpha(opacity=75);
+  background-size: 50% 50%;
+  display: none;
+}
+
+.swiper-container:hover .swiper-button-prev {
+  left: 16px;
+}
+
+.swiper-container:hover .swiper-button-next {
+  right: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: block;
+}
+
+.swiper-pagination {
+  bottom: 5px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active:after {
+  top: -2px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+  .swiper-pagination {
+    bottom: 5px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active:after {
+    top: -2px;
+    left: -2px;
+    width: 16px;
+    height: 16px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+  }
+  .swiper-pagination .swiper-pagination-bullet-active:after {
+    top: -3px;
+    left: -3px;
+    width: 22px;
+    height: 22px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+  }
+}
+
+
+/*****************************************************************************
+ * swiper插件的特定样式【水平播放】： 图片slides
+ ******************************************************************************/
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide>img {
+  transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+}
+
+.scale {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.swiper-slide p.h2 {
+  display: none;
+}
+
+.swiper-slide p.h4 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    position: relative;
+  }
+  .swiper-slide p.h2 {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 5%;
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: #333;
+  }
+  .swiper-slide p.h4 {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    display: block;
+    width: 90%;
+    text-align: center;
+    color: #333;
+  }
+}
