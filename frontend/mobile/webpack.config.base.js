@@ -29,7 +29,7 @@ var cssDir = path.resolve(__dirname, '..', '..', 'static', 'css');
 module.exports = {
   entry: {
     vendor: [
-      'vue', 'vue-router', 'axios',
+      'vue', 'vue-router', 'axios', 'vue-touch', 'better-scroll', 'vue-awesome-swiper',
       'mint-ui'
     ],
     cssVendor: [
@@ -90,28 +90,90 @@ module.exports = {
   watch: true,
   module: {
     rules: [{
-      test: /\.css$/,
-      loader: 'style-loader!css-loader'
-    }, {
-      test: /\.vue$/,
-      loader: 'vue-loader',
-      options: {
-        esModule: true
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [{
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              modules: true,
+              localIdentName: '[local]_[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: false,
+              config: {
+                path: '.postcssrc.js' // 这个得在项目根目录创建此文件
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: false
+            }
+          }
+        ]
+      },
+      {
+        test: /\.scss$/,
+        use: [{
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: false,
+              modules: true
+              // localIdentName: '[local]_[hash:base64:5]'
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: false,
+              config: {
+                path: '.postcssrc.js'
+              }
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: false
+            }
+          }
+        ]
+      },
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+        options: {
+          esModule: true
+        }
+      }, {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        include: [distDir],
+        exclude: '/node_modules/',
+        options: {
+          presets: ['es2015']
+        }
+      }, {
+        test: /\.(png|jpg|gif|woff|woff2|svg|eot|ttf)$/,
+        loader: 'url-loader',
+        options: {
+          name: './static/abcdefg/[hash].[ext]'
+        }
       }
-    }, {
-      test: /\.js$/,
-      loader: 'babel-loader',
-      include: [distDir],
-      exclude: '/node_modules/',
-      options: {
-        presets: ['es2015']
-      }
-    }, {
-      test: /\.(png|jpg|gif|woff|woff2|svg|eot|ttf)$/,
-      loader: 'url-loader',
-      options: {
-        name: './static/abcdefg/[hash].[ext]'
-      }
-    }]
+    ]
   }
 }
