@@ -34,7 +34,6 @@ module.exports = {
     ],
     cssVendor: [
       'mint-ui-style',
-      'animate', 'bootstrap',
       'index'
     ],
     app: ['./frontend/mobile/js/app.js']
@@ -51,9 +50,6 @@ module.exports = {
       '@': path.resolve('frontend/mobile'),
 
       'mint-ui-style': 'mint-ui/lib/style.css',
-
-      'animate': path.resolve(cssDir + '/animate.min.css'),
-      'bootstrap': path.resolve(cssDir + '/bootstrap.min.css'),
 
       'index': path.resolve(cssDir + '/other/index.scss'),
     }

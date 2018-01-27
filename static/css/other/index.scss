@@ -2,6 +2,9 @@
   display: flex;
 }
 
+@import "../bootstrap.min.css";
+@import "../animate.min.css";
+// 分割一下
 @import "./another/flex.scss";
 @import "./another/px1.scss";
 @import "./another/another.scss";
