@@ -11,32 +11,21 @@
     </mt-loadmore> -->
 
     <p class="help-block mt10 c">
+      <a href="javascript://" class="abc">这是abc</a>
       <a href="javascript://">- 为您推荐 -</a>
     </p>
 
     <!-- 4个按钮 -->
     <hotBtnList></hotBtnList>
 
-    <!--  -->
-    <!-- <video :src="'/static/videos/01_NodeJS简介.avi'" controls="controls" style="border:1px solid #000;background-color:#999;"> -->
-    <!-- <video :src="'http://vjs.zencdn.net/v/oceans.mp4'" controls="controls" style="border:1px solid #000;background-color:#999;max-width:100%;">
-      您的浏览器不支持 video 标签。
-    </video> -->
-
   </div>
-
 </template>
 
 <script>
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
-
 import hotBtnList from './hot/hotBtnList'
 
-// 临时测试
-// https://github.com/surmon-china/vue-video-player
-// import 'video.js/dist/video-js.css'
-// import { videoPlayer } from 'vue-video-player'
 
 export default {
   name: 'hot',
@@ -54,7 +43,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .swiper-pagination.swiper-pagination-bullets {
   width: 100%;
 }
