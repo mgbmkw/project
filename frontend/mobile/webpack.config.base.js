@@ -36,7 +36,6 @@ module.exports = {
       'mint-ui-style', 'changeMintUI',
       'animate', 'bootstrap',
       'common', 'reset', 'uikits',
-      'another1', 'another2', 'auto', 'bg-bj', 'bk', 'button', 'dl-dt-dd', 'fd-float', 'flex', 'font', 'hr-divider', 'img', 'input', 'omit', 'p', 'scrollbar', 'shadow', 'title', 'ul-li', 'wh', 'modal', 'gradient',
       'index'
     ],
     app: ['./frontend/mobile/js/app.js']
