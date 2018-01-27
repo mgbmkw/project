@@ -16,7 +16,7 @@ NodeJS和Vue.js2.0
 (3)【数据库】，如果想查看【Mongoose】和【Sequelize】的效果，请开启相关对应的数据库服务器和代码。<br/>
 
 
-![Image text](https://raw.github.com/mgbmkw/repositpry/master/images/01.png)
+![效果：](https://github.com/mgbmkw/images/blob/master/01.png)
 
 
 
