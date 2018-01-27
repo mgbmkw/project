@@ -33,9 +33,8 @@ module.exports = {
       'mint-ui'
     ],
     cssVendor: [
-      'mint-ui-style', 'changeMintUI',
+      'mint-ui-style',
       'animate', 'bootstrap',
-      'common', 'reset', 'uikits',
       'index'
     ],
     app: ['./frontend/mobile/js/app.js']
@@ -52,40 +51,11 @@ module.exports = {
       '@': path.resolve('frontend/mobile'),
 
       'mint-ui-style': 'mint-ui/lib/style.css',
-      'changeMintUI': path.resolve(cssDir + '/change/change-Mint-UI.css'),
 
       'animate': path.resolve(cssDir + '/animate.min.css'),
       'bootstrap': path.resolve(cssDir + '/bootstrap.min.css'),
 
-      'common': path.resolve(cssDir + '/other/common.css'),
-      'reset': path.resolve(cssDir + '/other/reset.css'),
-      'uikits': path.resolve(cssDir + '/other/uikits.css'),
       'index': path.resolve(cssDir + '/other/index.scss'),
-
-      // 'another': path.resolve(cssDir + '/other/another/another.css'),
-      'another1': path.resolve(cssDir + '/other/another/another1.css'),
-      'another2': path.resolve(cssDir + '/other/another/another2.css'),
-      'auto': path.resolve(cssDir + '/other/another/auto.css'),
-      'bg-bj': path.resolve(cssDir + '/other/another/bg-bj.css'),
-      'bk': path.resolve(cssDir + '/other/another/bk.css'),
-      'button': path.resolve(cssDir + '/other/another/button.css'),
-      'dl-dt-dd': path.resolve(cssDir + '/other/another/dl-dt-dd.css'),
-      'fd-float': path.resolve(cssDir + '/other/another/fd-float.css'),
-      'flex': path.resolve(cssDir + '/other/another/flex.css'),
-      'font': path.resolve(cssDir + '/other/another/font.css'),
-      'hr-divider': path.resolve(cssDir + '/other/another/hr-divider.css'),
-      'img': path.resolve(cssDir + '/other/another/img.css'),
-      'input': path.resolve(cssDir + '/other/another/input.css'),
-      'omit': path.resolve(cssDir + '/other/another/omit.css'),
-      'p': path.resolve(cssDir + '/other/another/p.css'),
-      'px1': path.resolve(cssDir + '/other/another/px1.css'),
-      'scrollbar': path.resolve(cssDir + '/other/another/scrollbar.css'),
-      'shadow': path.resolve(cssDir + '/other/another/shadow.css'),
-      'title': path.resolve(cssDir + '/other/another/title.css'),
-      'ul-li': path.resolve(cssDir + '/other/another/ul-li.css'),
-      'wh': path.resolve(cssDir + '/other/another/wh.css'),
-      'modal': path.resolve(cssDir + '/other/another/modal.css'),
-      'gradient': path.resolve(cssDir + '/other/another/gradient.css')
     }
   },
   watch: true,

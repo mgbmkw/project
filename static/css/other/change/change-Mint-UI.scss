@@ -1,0 +1,37 @@
+/* change修改样式： Mint-UI */
+
+.mint-indexsection-index {
+  background-color: rgba(19, 82, 158, .35);
+  border-radius: 3px;
+  padding: 4px 10px;
+}
+
+.mint-indexlist-navitem {
+  padding: 0px 6px;
+}
+
+.mint-indexlist-nav {
+  position: fixed;
+  background: none;
+  border-left: 0;
+}
+
+.mint-tab-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.mint-tab-container-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+
+/* cell的点击，在手机端非常丑！~ */
+
+.mint-cell:focus,
+.mint-cell:hover {
+  text-decoration: none;
+}
