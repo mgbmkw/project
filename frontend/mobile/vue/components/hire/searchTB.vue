@@ -2,7 +2,7 @@
   <div class="searchTB">
 
     <!-- 淘宝输入框 -->
-    <div style="display:-webkit-flex;">
+    <div style="display:-webkit-flex;" class="abcdefghijklmnopqrst">
       <div style="width:100px;text-align:center;">
         <p class="glyphicon glyphicon-headphones"></p>
         <p style="font-size:10px;">扫一扫</p>

@@ -17,12 +17,6 @@
   top: 100%;
   left: 0;
   z-index: -1;
-  -webkit-transform: scale(0.5);
-  -webkit-transform-origin: 0 0;
-  -ms-transform: scale(0.5);
-  -ms-transform-origin: 0 0;
-  -o-transform: scale(0.5);
-  -o-transform-origin: 0 0;
   transform: scale(0.5);
   transform-origin: 0 0;
 }
@@ -42,17 +36,10 @@
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transform: scale(.5);
-  -webkit-transform-origin: 0 0;
-  -ms-transform: scale(.5);
-  -ms-transform-origin: 0 0;
-  -o-transform: scale(.5);
-  -o-transform-origin: 0 0;
   transform: scale(.5);
   transform-origin: 0 0;
   /* padding: 6px; */
 }
-
 
 /******************************************************************************
  * 1px像素边框：左
@@ -79,7 +66,6 @@
   border-right: 1px solid #1062a3;
 }
 
-
 /******************************************************************************
  * 1px像素边框
  *******************************************************************************/
@@ -103,6 +89,5 @@
 .bk-btm .form-control {
   border-color: transparent;
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }

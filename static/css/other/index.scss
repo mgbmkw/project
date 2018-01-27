@@ -1,7 +1,7 @@
 .abcdefghijklmnopqrst {
   display: flex;
-  align-items: center;
-  font-size: 66px;
-  height: 100px;
-  width: 100px;
 }
+
+@import "./another/flex.scss";
+@import "./another/px1.scss";
+@import "./another/another.scss";
