@@ -5,11 +5,21 @@
 @import "../bootstrap.min.css";
 @import "../animate.min.css";
 // 分割一下
-@import "./another/flex.scss";
-@import "./another/px1.scss";
+@import "./public/common.scss";
+@import "./public/reset.scss";
+@import "./public/uikits.scss";
+// 分割一下
+@import "./change/change-Mint-UI.scss";
+// @import "./change/change-Element-UI.scss";
+// @import "./change/change-iView.scss";
+// @import "./change/change-bootstrap.scss";
+// @import "./change/change-swiper.scss";
+// 分割一下
 @import "./another/another.scss";
 @import "./another/another1.scss";
 @import "./another/another2.scss";
+@import "./another/flex.scss";
+@import "./another/px1.scss";
 @import "./another/auto.scss";
 @import "./another/bg-bj.scss";
 @import "./another/bk";
@@ -30,13 +40,3 @@
 @import "./another/wh";
 @import "./another/modal";
 @import "./another/gradient";
-// 分割一下
-@import "./public/common.scss";
-@import "./public/reset.scss";
-@import "./public/uikits.scss";
-// 分割一下
-@import "./change/change-Mint-UI.scss";
-// @import "./change/change-Element-UI.scss";
-// @import "./change/change-iView.scss";
-// @import "./change/change-bootstrap.scss";
-// @import "./change/change-swiper.scss";

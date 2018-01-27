@@ -21,12 +21,6 @@ h4.hr:before {
   top: 100%;
   left: 0;
   z-index: 1;
-  -webkit-transform: scale(.5);
-  -webkit-transform-origin: 0 0;
-  -ms-transform: scale(.5);
-  -ms-transform-origin: 0 0;
-  -o-transform: scale(.5);
-  -o-transform-origin: 0 0;
   transform: scale(.5);
   transform-origin: 0 0;
 }
@@ -44,6 +38,7 @@ div.hr:before {
   margin-bottom: 30px;
   min-height: 22px;
 }
+
 .hr:before {
   content: '';
   width: 200%;
@@ -53,12 +48,6 @@ div.hr:before {
   top: 100%;
   left: 0;
   z-index: 1;
-  -webkit-transform: scale(.5);
-  -webkit-transform-origin: 0 0;
-  -ms-transform: scale(.5);
-  -ms-transform-origin: 0 0;
-  -o-transform: scale(.5);
-  -o-transform-origin: 0 0;
   transform: scale(.5);
   transform-origin: 0 0;
 }
