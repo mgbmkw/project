@@ -29,8 +29,7 @@ var cssDir = path.resolve(__dirname, '..', '..', 'static', 'css');
 module.exports = {
   entry: {
     vendor: [
-      'vue', 'vue-router', 'axios', 'vue-touch', 'better-scroll', 'vue-awesome-swiper',
-      'mint-ui'
+      'vue', 'vue-router', 'axios', 'vue-touch', 'better-scroll', 'vue-awesome-swiper', 'mint-ui'
     ],
     cssVendor: [
       'mint-ui-style',
@@ -48,10 +47,8 @@ module.exports = {
     alias: {
       'vue': 'vue/dist/vue.js',
       '@': path.resolve('frontend/mobile'),
-
       'mint-ui-style': 'mint-ui/lib/style.css',
-
-      'index': path.resolve(cssDir + '/other/index.scss'),
+      'index': path.resolve(cssDir + '/other/index.scss')
     }
   },
   watch: true,
