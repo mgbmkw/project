@@ -14,7 +14,7 @@ let componentsMobile = require("../controllers/components-mobile")
 
 module.exports = function set(app) {
 
-  // 
+  // 使用【Mongoose】写的api： 注册
   app.use('/api/Mongoose/register', register)
 
   app.use('/content', content)
