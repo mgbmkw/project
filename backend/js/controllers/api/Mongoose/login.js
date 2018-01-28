@@ -8,13 +8,14 @@ let router = express.Router()
 
 router.post('/', async (req, res, next) => {
   let username = req.body.params.username
-  let password = req.body.params.password
+  let password = help.md5(req.body.params.password)
   // console.log(req.body.params)
   // res.redirect('/content')
   // res.location('../content')
 
   let whereStr = {
-    'username': username
+    'username': username,
+    'password': password
   };
 
   User.find(whereStr, function (err, data) {
@@ -31,7 +32,11 @@ router.post('/', async (req, res, next) => {
       } else {
         console.log('有数据')
         req.session.username = req.body.params.username
-        console.log('req.session.username： ' + req.session.username)
+        req.session.password = req.body.params.password
+        req.session.loginSign = 1
+        console.log('req.session.username： ' + username)
+        console.log('req.session.password： ' + password)
+        console.log('req.session.loginSign： ' + req.session.loginSign)
         // return res.render('content')
         res.status(200).json(data)
         // res.redirect('./login')

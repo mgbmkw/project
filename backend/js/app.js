@@ -41,7 +41,8 @@ app.use(session({
   resave: true,
   saveUninitialized: false, // 是否保存未初始化的会话
   cookie: {
-    maxAge: 1000 * 60 * 3, // 设置 session 的有效时间，单位毫秒
+    // maxAge: 1000 * 60 * 3 // 设置 session 的有效时间，单位毫秒
+    maxAge: null // 
   },
 }))
 
