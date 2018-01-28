@@ -1,5 +1,4 @@
 let express = require("express")
-let api = require("../controllers/api")
 
 let register = require("../controllers/api/Mongoose/register")
 
@@ -14,7 +13,6 @@ let componentsMobile = require("../controllers/components-mobile")
 
 
 module.exports = function set(app) {
-  // app.use('/api', api)
 
   // 
   app.use('/api/Mongoose/register', register)
