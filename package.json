@@ -6,10 +6,16 @@
   "scripts": {
     "dev": "webpack --config ./frontend/login/webpack.config.dev.js",
     "prod": "webpack --config ./frontend/login/webpack.config.prod.js",
+
     "dev-main": "webpack --config ./frontend/main/webpack.config.dev.js",
     "prod-main": "webpack --config ./frontend/main/webpack.config.prod.js",
+
     "dev-mobile": "webpack --config ./frontend/mobile/webpack.config.dev.js",
     "prod-mobile": "webpack --config ./frontend/mobile/webpack.config.prod.js",
+
+    "dev-mobile-background": "webpack --config ./frontend/mobile-background/webpack.config.dev.js",
+    "prod-mobile-background": "webpack --config ./frontend/mobile-background/webpack.config.prod.js",
+
     "dev-components-mobile": "webpack --config ./frontend/components-mobile/webpack.config.dev.js",
     "prod-components-mobile": "webpack --config ./frontend/components-mobile/webpack.config.prod.js"
   },

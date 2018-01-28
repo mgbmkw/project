@@ -7,55 +7,46 @@ let router = express.Router()
 
 
 router.post('/', async (req, res, next) => {
-  let username = req.body.params.username
-  let password = help.md5(req.body.params.password)
-  let passwordConfirm = help.md5(req.body.params.passwordConfirm)
-  let phone = req.body.params.phone
-  let code = req.body.params.code
-  let phoneCode = req.body.params.phoneCode
-
-  let saveJson = {
-    username: username,
-    password: password,
-    passwordConfirm: passwordConfirm,
-    phone: phone,
-    code: code,
-    phoneCode: phoneCode
+  let registerJson = {
+    username: req.body.params.username,
+    password: help.md5(req.body.params.password),
+    passwordConfirm: help.md5(req.body.params.passwordConfirm),
+    phone: req.body.params.phone,
+    code: req.body.params.code,
+    phoneCode: req.body.params.phoneCode
   }
-  console.log(password)
-  console.log(passwordConfirm)
+  console.log(registerJson.password)
+  console.log(registerJson.passwordConfirm)
   let returnStr = {
     data: {}
   }
 
 
 
-
-
   // 判断非空
-  if (!username)
+  if (!registerJson.username)
     return res.json(help.validator(username, returnStr, 'username不能为空'))
 
-  if (!password)
+  if (!registerJson.password)
     return res.json(help.validator(password, returnStr, 'password不能为空'))
 
-  if (!passwordConfirm)
+  if (!registerJson.passwordConfirm)
     return res.json(help.validator(passwordConfirm, returnStr, 'passwordConfirm不能为空'))
 
   // 密码不一致判断
-  if (password !== passwordConfirm)
+  if (registerJson.password !== registerJson.passwordConfirm)
     return res.json(help.validator(passwordConfirm, returnStr, '密码不一致，请重新填写！'))
 
-  if (!phone)
+  if (!registerJson.phone)
     return res.json(help.validator(phone, returnStr, 'phone不能为空'))
 
-  if (!code)
+  if (!registerJson.code)
     return res.json(help.validator(code, returnStr, 'code不能为空'))
 
-  if (!phoneCode)
+  if (!registerJson.phoneCode)
     return res.json(help.validator(phoneCode, returnStr, 'phoneCode不能为空'))
 
-  if (!username)
+  if (!registerJson.username)
     return res.json(help.validator(username, returnStr, 'username不能为空'))
 
 
@@ -66,7 +57,7 @@ router.post('/', async (req, res, next) => {
   try {
     // 用户名已使用判断
     let whereStr = {
-      'username': username
+      'username': registerJson.username
     };
 
     User.find(whereStr, function (err, data) {
@@ -77,14 +68,16 @@ router.post('/', async (req, res, next) => {
           console.log(data)
           console.log('用户名已经使用了，所以无法添加~')
           res.status(404).json({
-            status: '用户名已经使用~'
+            status: -1,
+            msg: '用户名已经使用~'
           })
         } else {
           console.log(data)
-          new User(saveJson).save(function () {
+          new User(registerJson).save(function () {
             console.log("存储成功")
             res.status(200).json({
-              status: '成功！OK'
+              status: 1,
+              msg: '注册成功！OK'
             })
           })
         }
@@ -98,7 +91,7 @@ router.post('/', async (req, res, next) => {
 
   // 第2种方式：工厂方式，静态方法。
   // try {
-  //   User.create(saveJson, function (error) {
+  //   User.create(registerJson, function (error) {
   //     console.log("存储成功")
   //     res.status(200).json({
   //       status: '成功！OK'
