@@ -17,6 +17,8 @@ module.exports = function set(app) {
   // 使用【Mongoose】写的api： 注册
   app.use('/api/Mongoose/register', register)
 
+
+  // 以下是直接render相应的【页面】
   app.use('/content', content)
   app.use('/login', login)
   app.use('/components-mobile', componentsMobile)

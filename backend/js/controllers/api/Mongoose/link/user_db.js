@@ -1,15 +1,27 @@
 let mongoose = require("mongoose")
-let db = require("./link")
+let db = require("./user_db_link")
 
 
 // 创建了一个schema结构。即：【表】结构。
 var userSchema = new mongoose.Schema({
-  username: { type: String },
-  password: { type: String },
-  passwordConfirm: { type: String },
-  phone: { type: String },
-  code: { type: String },
-  phoneCode: { type: String }
+  username: {
+    type: String
+  },
+  password: {
+    type: String
+  },
+  passwordConfirm: {
+    type: String
+  },
+  phone: {
+    type: String
+  },
+  code: {
+    type: String
+  },
+  phoneCode: {
+    type: String
+  }
 })
 
 
