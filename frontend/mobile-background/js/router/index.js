@@ -1,18 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import formItems from '@/vue/components/formItems'
-import swiperCarousel from '@/vue/components/swiperCarousel'
+import kong from '@/vue/components/kong'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [{
-    path: '/swiperCarousel',
-    name: 'swiperCarousel',
-    component: swiperCarousel
+    path: '/kong',
+    name: 'kong',
+    component: kong
   }, {
     path: '/',
-    component: formItems
+    component: kong
   }]
 })

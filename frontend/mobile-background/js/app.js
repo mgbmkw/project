@@ -4,15 +4,11 @@ import router from '@/js/router'
 // import 'iview/dist/styles/iview.css'
 
 import iview from 'iview'
-import mintUI from 'mint-ui'
-import ElementUI from 'element-ui'
 
 Vue.config.productionTip = false
 
 // Vue.use(iviewStyle)
 Vue.use(iview)
-Vue.use(mintUI)
-Vue.use(ElementUI)
 
 
 
