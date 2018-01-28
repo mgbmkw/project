@@ -12,5 +12,5 @@ module.exports = router.use('/', (req, res, next) => {
   } else {
     res.render('content')
   }
-  
+
 })

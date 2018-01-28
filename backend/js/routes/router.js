@@ -1,6 +1,7 @@
 let express = require("express")
 
-let register = require("../controllers/api/Mongoose/register")
+let Mongoose_register = require("../controllers/api/Mongoose/register")
+let Mongoose_login = require("../controllers/api/Mongoose/login")
 
 
 let content = require("../controllers/content")
@@ -15,7 +16,8 @@ let componentsMobile = require("../controllers/components-mobile")
 module.exports = function set(app) {
 
   // 使用【Mongoose】写的api： 注册
-  app.use('/api/Mongoose/register', register)
+  app.use('/api/Mongoose/register', Mongoose_register)
+  app.use('/api/Mongoose/login', Mongoose_login)
 
 
   // 以下是直接render相应的【页面】
