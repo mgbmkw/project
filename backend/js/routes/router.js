@@ -1,5 +1,9 @@
 let express = require("express")
-// let api = require("../controllers/api")
+let api = require("../controllers/api")
+
+let register = require("../controllers/api/Mongoose/register")
+
+
 let content = require("../controllers/content")
 let login = require("../controllers/login")
 let main = require("../controllers/main")
@@ -11,8 +15,12 @@ let componentsMobile = require("../controllers/components-mobile")
 
 module.exports = function set(app) {
   // app.use('/api', api)
+
+  // 
+  app.use('/api/Mongoose/register', register)
+
   app.use('/content', content)
-  // app.use('/login', login)
+  app.use('/login', login)
   app.use('/components-mobile', componentsMobile)
   app.use('/mobile', mobile)
   app.use('/upload', upload)

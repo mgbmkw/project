@@ -64,7 +64,7 @@ export default {
   },
   methods: {
     ok() {
-      Axios.post('/api/Mongoose', {
+      Axios.post('/api/Mongoose/register', {
         params: {
           username: this.registerMsg.username,
           password: this.registerMsg.password,
