@@ -1,6 +1,7 @@
 let express = require("express")
 
 let Mongoose_register = require("../controllers/api/Mongoose/register")
+let Mongoose_unique_username = require("../controllers/api/Mongoose/unique_username")
 let Mongoose_login = require("../controllers/api/Mongoose/login")
 
 
@@ -17,6 +18,7 @@ module.exports = function set(app) {
 
   // 使用【Mongoose】写的api： 注册
   app.use('/api/Mongoose/register', Mongoose_register)
+  app.use('/api/Mongoose/unique_username', Mongoose_unique_username)
   app.use('/api/Mongoose/login', Mongoose_login)
 
 

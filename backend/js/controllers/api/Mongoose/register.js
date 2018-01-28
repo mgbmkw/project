@@ -28,6 +28,10 @@ router.post('/', async (req, res, next) => {
     data: {}
   }
 
+
+
+
+
   // 判断非空
   if (!username)
     return res.json(help.validator(username, returnStr, 'username不能为空'))
@@ -38,6 +42,7 @@ router.post('/', async (req, res, next) => {
   if (!passwordConfirm)
     return res.json(help.validator(passwordConfirm, returnStr, 'passwordConfirm不能为空'))
 
+  // 密码不一致判断
   if (password !== passwordConfirm)
     return res.json(help.validator(passwordConfirm, returnStr, '密码不一致，请重新填写！'))
 
@@ -54,16 +59,39 @@ router.post('/', async (req, res, next) => {
     return res.json(help.validator(username, returnStr, 'username不能为空'))
 
 
+
   // console.log(req.body.params)
 
   // 第1种方式：实例化了一个学生类，并，保存这个学生类
   try {
-    new User(saveJson).save(function () {
-      console.log("存储成功")
-      res.status(200).json({
-        status: '成功！OK'
-      })
+    // 用户名已使用判断
+    let whereStr = {
+      'username': username
+    };
+
+    User.find(whereStr, function (err, data) {
+      if (err) {
+        console.log("Error:" + err)
+      } else {
+        if (data.length > 0) {
+          console.log(data)
+          console.log('用户名已经使用了，所以无法添加~')
+          res.status(404).json({
+            status: '用户名已经使用~'
+          })
+        } else {
+          console.log(data)
+          new User(saveJson).save(function () {
+            console.log("存储成功")
+            res.status(200).json({
+              status: '成功！OK'
+            })
+          })
+        }
+      }
     })
+
+
   } catch (err) {
     return res.json(err)
   }

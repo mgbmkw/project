@@ -11,7 +11,7 @@ module.exports = router.use('/', (req, res, next) => {
   } else {
     req.session.error = "请先登录"
     console.log('没有req.session.username的值！')
-    res.redirect("/login") //未登录则重定向到 /login 路径
+    res.redirect("/login") // 未登录则重定向到 /login 路径
   }
 
 })

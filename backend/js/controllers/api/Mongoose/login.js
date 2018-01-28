@@ -22,8 +22,6 @@ router.post('/', async (req, res, next) => {
     if (err) {
       console.log("Error:" + err)
     } else {
-      // console.log(data.length)
-      // console.log(data)
       if (data.length == 0) {
         console.log('没有数据')
         res.status(404).json({
