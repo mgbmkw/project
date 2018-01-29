@@ -1,29 +1,25 @@
 
 <template>
-  <div class="layout">
-    <Layout>
+  <div class="layout wh100flau">
+    <Layout class="wh100flau">
       <Header :style="{position: 'fixed', width: '100%', zIndex: 999999}">
         <Menu mode="horizontal" theme="dark" active-name="1" @on-select="onMenuSelect">
           <div class="layout-nav">
 
             <MenuItem name="login">
             <Icon type="ios-navigate"></Icon>
-            <router-link to="/">表单</router-link>
+            <router-link to="/mobile-background">微信</router-link>
             </MenuItem>
 
           </div>
         </Menu>
       </Header>
 
-      <Content :style="{margin: '88px 20px 0', background: '#697c90', minHeight: '430px'}">
-
- 
-
+      <div style="margin-top:90px;background-color:#697c90;width:100%;height:100%;">
         <router-view style="background-color:#C7C2B9;"></router-view>
+      </div>
 
-      </Content>
-
-      <Footer class="layout-footer-center">2017-2018 &copy 所有解说权由【mgb】提供</Footer>
+      <!-- <Footer class="layout-footer-center" style="padding:16px 10px;">2017-2018 &copy 所有解说权由【mgb】提供</Footer> -->
     </Layout>
 
   </div>
