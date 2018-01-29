@@ -1,63 +1,35 @@
 <template>
-  <div class="wx" style="padding:6px 10px;">
+  <div class="mall wh100flau" style="padding:6px 10px;">
 
     <Tabs :animated="false">
       <!--  -->
-      <TabPane icon="paper-airplane" label="点菜">
-
-        <Form :model="formRight" label-position="right" :label-width="100">
-          <Row>
-            <Col span="8">
-            <FormItem label="商家名称">
-              <Input size="small" v-model="formRight.input1"></Input>
-            </FormItem>
-
-            <FormItem label="商家编号">
-              <Input size="small" v-model="formRight.input1"></Input>
-            </FormItem>
-
-            <FormItem label="菜品">
-              <Input size="small" v-model="formRight.input1"></Input>
-            </FormItem>
-            </Col>
-            <Col span="8">
-            <FormItem label="所属类型">
-              <Input size="small" v-model="formRight.input2"></Input>
-            </FormItem>
-            </Col>
-            <Col span="8">
-            <FormItem label="菜品介绍">
-              <Input size="small" v-model="formRight.input3"></Input>
-            </FormItem>
-            </Col>
-            <Col span="8">
-            <FormItem label="价格">
-              <Input size="small" v-model="formRight.input4"></Input>
-            </FormItem>
-            </Col>
-            <Col span="8">
-            <FormItem label="图片">
-              <Input size="small" v-model="formRight.input5"></Input>
-            </FormItem>
-            </Col>
-          </Row>
-        </Form>
+      <TabPane icon="paper-airplane" label="商家基本信息">
 
       </TabPane>
 
       <!--  -->
-      <TabPane icon="person-stalker" label="评价">
-        评价
+      <TabPane icon="ios-list-outline" label="商品列表">
+        商品列表
       </TabPane>
 
       <!--  -->
-      <TabPane icon="social-chrome" label="商家">
-        商家
+      <TabPane icon="android-add" label="添加商品">
+        添加商品
       </TabPane>
 
       <!--  -->
-      <TabPane icon="happy-outline" label="商城页">
-        商城页
+      <TabPane icon="happy-outline" label="经营情况">
+        经营情况
+      </TabPane>
+
+      <!--  -->
+      <TabPane icon="clipboard" label="其他信息">
+        其他信息
+      </TabPane>
+
+      <!--  -->
+      <TabPane icon="stats-bars" label="图表分析">
+        图表分析
       </TabPane>
 
       <!--  -->
@@ -67,16 +39,10 @@
 
 <script>
 export default {
-  name: 'wx',
+  name: 'mall',
   data() {
     return {
-      formRight: {
-        input1: '',
-        input2: '',
-        input3: '',
-        input4: '',
-        input5: ''
-      }
+
     }
   }, methods: {
 

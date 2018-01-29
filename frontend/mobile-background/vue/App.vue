@@ -11,7 +11,6 @@
             <router-link to="/mobile-background">首页/微信</router-link>
             </MenuItem>
 
-
             <MenuItem name="hot">
             <Icon type="ios-navigate"></Icon>
             <router-link to="/mobile-background/hot">热点</router-link>
@@ -36,7 +35,7 @@
         </Menu>
       </Header>
 
-      <div style="margin-top:60px;background-color:#f1f1f1;width:100%;height:100%;">
+      <div class="wh100flhi" style="padding-top:60px;background-color:#f1f1f1;">
         <router-view></router-view>
       </div>
 
