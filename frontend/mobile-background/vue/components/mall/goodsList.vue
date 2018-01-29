@@ -1,36 +1,7 @@
 <template>
   <div class="goodsList">
 
-    <Form :model="formVal" label-position="right" :label-width="100">
-      <Row>
-        <Col span="8">
-        <FormItem label="菜品名称">
-          <Input size="small" v-model="formVal.input6"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="所属类型">
-          <Input size="small" v-model="formVal.input10"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="菜品介绍">
-          <Input size="small" v-model="formVal.input11"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="价格">
-          <Input size="small" v-model="formVal.input12"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="菜品图片">
-          <Input size="small" v-model="formVal.input13"></Input>
-        </FormItem>
-        </Col>
-      </Row>
-    </Form>
+    <Table height="400" border :columns="columns1" :data="data2"></Table>
 
   </div>
 </template>
@@ -40,21 +11,113 @@ export default {
   name: 'goodsList',
   data() {
     return {
-           formVal: {
-        input1: '',
-        input2: '',
-        input3: '',
-        input4: '',
-        input5: '',
-        input6: '',
-        input7: '',
-        input8: '',
-        input9: '',
-        input10: '',
-        input11: '',
-        input12: '',
-        input13: ''
-      }
+      columns1: [
+        {
+          type: 'selection',
+          width: 60,
+          align: 'center',
+          fixed: 'left'
+        },
+        {
+          title: 'Name',
+          key: 'name',
+          fixed: 'left',
+          sortable: true,
+          render: (h, params) => {
+            return h('div', [
+              h('Icon', {
+                props: {
+                  type: 'person'
+                }
+              }),
+              h('img', {
+                attrs: {
+                  src: '/static/images/700×350图片03.jpg', 
+                  class:'img24', 
+                  style:'margin-right:10px;'
+                }
+              }),
+              h('strong', params.row.name)
+            ]);
+          }
+        },
+        {
+          title: 'Age',
+          key: 'age',
+          filters: [
+            {
+              label: '大于25',
+              value: 1
+            },
+            {
+              label: '小于25',
+              value: 2
+            }
+          ],
+          filterMultiple: false,
+          filterMethod(value, row) {
+            if (value === 1) {
+              return row.age > 25;
+            } else if (value === 2) {
+              return row.age < 25;
+            }
+          }
+        },
+        {
+          title: 'Address',
+          key: 'address'
+        }
+      ],
+      data2: [
+        {
+          name: 'John Brown',
+          age: 18,
+          address: 'New York No. 1 Lake Park',
+          date: '2016-10-03'
+        },
+        {
+          name: 'Jim Green',
+          age: 24,
+          address: 'London No. 1 Lake Park',
+          date: '2016-10-01'
+        },
+        {
+          name: 'Joe Black',
+          age: 30,
+          address: 'Sydney No. 1 Lake Park',
+          date: '2016-10-02'
+        },
+        {
+          name: 'Jon Snow',
+          age: 26,
+          address: 'Ottawa No. 2 Lake Park',
+          date: '2016-10-04'
+        },
+        {
+          name: 'John Brown',
+          age: 18,
+          address: 'New York No. 1 Lake Park',
+          date: '2016-10-03'
+        },
+        {
+          name: 'Jim Green',
+          age: 24,
+          address: 'London No. 1 Lake Park',
+          date: '2016-10-01'
+        },
+        {
+          name: 'Joe Black',
+          age: 30,
+          address: 'Sydney No. 1 Lake Park',
+          date: '2016-10-02'
+        },
+        {
+          name: 'Jon Snow',
+          age: 26,
+          address: 'Ottawa No. 2 Lake Park',
+          date: '2016-10-04'
+        }
+      ]
     }
   }, methods: {
 

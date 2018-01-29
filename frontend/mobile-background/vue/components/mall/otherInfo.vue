@@ -5,80 +5,67 @@
       <Row>
         <Col span="24">
         <FormItem label="配送时间">
-          <TimePicker :value="timePicker1" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
-          <TimePicker :value="timePicker2" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
-          <TimePicker :value="timePicker3" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
+          <div style="display:-webkit-flex;text-align:center;">
+            <TimePicker :value="timePicker1" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
+            <TimePicker :value="timePicker2" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
+            <TimePicker :value="timePicker3" format="HH ：mm" type="timerange" placement="bottom-start" placeholder="请选择时间" style="width: 25%"></TimePicker>
+          </div>
         </FormItem>
         </Col>
 
         <Col span="24">
         <FormItem label="食品安全">
-          <!-- <Input size="small" v-model="formVal.input13"></Input> -->
+          <Card>
+            <div style="display:-webkit-flex;text-align:center;">
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片01.jpg'">
+                <h5 style="margin-top:15px;">营业执照</h5>
+              </div>
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片02.jpg'">
+                <h5 style="margin-top:15px;">食品安全许可证</h5>
+              </div>
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片03.jpg'">
+                <h5 style="margin-top:15px;">食品合格许可证</h5>
+              </div>
+              <Upload style="width:25%; " multiple type="drag" action="//jsonplaceholder.typicode.com/posts/">
+                <div>
+                  <Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>
+                  <p>点击/拖拽到这里上传图片！最多4张</p>
+                </div>
+              </Upload>
+            </div>
+          </Card>
         </FormItem>
-        </Col>
 
-        <Col span="24">
-        <Card>
-          <div style="display:-webkit-flex;text-align:center;">
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片01.jpg'">
-              <h5 style="margin-top:15px;">营业执照</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片02.jpg'">
-              <h5 style="margin-top:15px;">食品安全许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片03.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-          </div>
-        </Card>
         </Col>
 
         <Col span="24">
         <FormItem label="商家环境">
-          <!-- <Input size="small" v-model="formVal.input5"></Input> -->
+          <Card>
+            <div style="display:-webkit-flex;text-align:center;">
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片01.jpg'">
+                <h5 style="margin-top:15px;">营业执照</h5>
+              </div>
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片02.jpg'">
+                <h5 style="margin-top:15px;">食品安全许可证</h5>
+              </div>
+              <div style="width:25%; ">
+                <img style="width:50%;" :src="'/static/images/700×350图片03.jpg'">
+                <h5 style="margin-top:15px;">食品合格许可证</h5>
+              </div>
+              <Upload style="width:25%; " multiple type="drag" action="//jsonplaceholder.typicode.com/posts/">
+                <div>
+                  <Icon type="ios-cloud-upload" size="52" style="color: #3399ff"></Icon>
+                  <p>点击/拖拽到这里上传图片！最多4张</p>
+                </div>
+              </Upload>
+            </div>
+          </Card>
         </FormItem>
-        </Col>
-
-        <Col span="24">
-        <Card>
-          <div style="display:-webkit-flex;text-align:center;">
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片01.jpg'">
-              <h5 style="margin-top:15px;">营业执照</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片02.jpg'">
-              <h5 style="margin-top:15px;">食品安全许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片03.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片04.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片05.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片06.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片07.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-            <div style="width:25%; ">
-              <img style="width:50%;" :src="'/static/images/700×350图片08.jpg'">
-              <h5 style="margin-top:15px;">食品合格许可证</h5>
-            </div>
-          </div>
-        </Card>
         </Col>
       </Row>
     </Form>
