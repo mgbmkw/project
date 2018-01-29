@@ -1,93 +1,53 @@
 <template>
   <div class="merchantBasicInfo">
 
-    <Form :model="formRight" label-position="right" :label-width="100">
+    <Form :model="formVal" label-position="right" :label-width="100">
       <Row>
-        <Col span="8">
+        <Col span="12">
 
         <FormItem label="商家名称">
-          <Input size="small" v-model="formRight.input1"></Input>
+          <!-- <Input size="small" v-model="formVal.input1"></Input> -->
+          <!-- <Alert type="warning">汕头市娱乐有限公司</Alert> -->
+          <span style="line-height:34px;">汕头市天天乐超市有限公司</span>
         </FormItem>
-        </Col>
 
-        <Col span="8">
         <FormItem label="商家编号">
-          <Input size="small" v-model="formRight.input2"></Input>
+          <!-- <Input size="small" v-model="formVal.input2"></Input> -->
+          <span style="line-height:34px;">X10086</span>
         </FormItem>
-        </Col>
 
-        <Col span="8">
         <FormItem label="商家地址">
-          <Input size="small" v-model="formRight.input3"></Input>
+          <Input size="small" placeholder="广东省汕头市龙湖区中山东路XX号XX铺面" v-model="formVal.input3"></Input>
         </FormItem>
-        </Col>
 
-        <Col span="8">
-        <FormItem label="配送时间">
-          <Input size="small" v-model="formRight.input4"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="商家环境">
-          <Input size="small" v-model="formRight.input5"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="菜品">
-          <Input size="small" v-model="formRight.input6"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="星级">
-          <Input size="small" v-model="formRight.input7"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="活动">
-          <Input size="small" v-model="formRight.input8"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="评分">
-          <Input size="small" v-model="formRight.input9"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
-        <FormItem label="所属类型">
-          <Input size="small" v-model="formRight.input10"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="菜品介绍">
-          <Input size="small" v-model="formRight.input11"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="价格">
-          <Input size="small" v-model="formRight.input12"></Input>
-        </FormItem>
-        </Col>
-        <Col span="8">
-        <FormItem label="图片">
-          <Input size="small" v-model="formRight.input13"></Input>
-        </FormItem>
-        </Col>
-
-        <Col span="8">
         <FormItem label="手机/电话">
-          <Input size="small" v-model="formRight.input13"></Input>
+          <Input size="small" placeholder="13670317836" v-model="formVal.input13"></Input>
         </FormItem>
         </Col>
 
-        <Col span="8">
-        <FormItem label="食品安全">
-          <Input size="small" v-model="formRight.input13"></Input>
+        <Col span="12">
+        <FormItem label="综合评分">
+          <Rate show-text allow-half v-model="valueCustomText">
+            <span style="color: #f5a623">{{ valueCustomText }}</span>
+          </Rate>
+        </FormItem>
+
+        <FormItem label="商品评分">
+          <Rate show-text allow-half v-model="valueCustomText">
+            <span style="color: #f5a623">{{ valueCustomText }}</span>
+          </Rate>
+        </FormItem>
+
+        <FormItem label="服务评分">
+          <Rate show-text allow-half v-model="valueCustomText">
+            <span style="color: #f5a623">{{ valueCustomText }}</span>
+          </Rate>
+        </FormItem>
+
+        <FormItem label="口碑评分">
+          <Rate show-text allow-half v-model="valueCustomText">
+            <span style="color: #f5a623">{{ valueCustomText }}</span>
+          </Rate>
         </FormItem>
         </Col>
 
@@ -101,7 +61,7 @@ export default {
   name: 'merchantBasicInfo',
   data() {
     return {
-      formRight: {
+      formVal: {
         input1: '',
         input2: '',
         input3: '',
@@ -115,7 +75,9 @@ export default {
         input11: '',
         input12: '',
         input13: ''
-      }
+      },
+      valueText: 3,
+      valueCustomText: 3.6
     }
   }, methods: {
 

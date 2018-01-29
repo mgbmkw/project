@@ -8,7 +8,7 @@
 
             <MenuItem name="first">
             <Icon type="ios-navigate"></Icon>
-            <router-link to="/mobile-background">首页/微信</router-link>
+            <router-link to="/mobile-background/first">首页/微信</router-link>
             </MenuItem>
 
             <MenuItem name="hot">
