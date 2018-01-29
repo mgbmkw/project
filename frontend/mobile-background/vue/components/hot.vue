@@ -3,22 +3,22 @@
 
     <Tabs :animated="false">
       <!--  -->
-      <TabPane label="推荐文章">
+      <TabPane icon="paper-airplane" label="推荐文章">
         推荐文章
       </TabPane>
 
       <!--  -->
-      <TabPane label="新闻热点">
+      <TabPane icon="person-stalker" label="新闻热点">
         新闻热点
       </TabPane>
 
       <!--  -->
-      <TabPane label="在线视频">
+      <TabPane icon="social-chrome" label="在线视频">
         在线视频
       </TabPane>
 
       <!--  -->
-      <TabPane label="在线歌曲">
+      <TabPane icon="happy-outline" label="在线歌曲">
         在线歌曲
       </TabPane>
 

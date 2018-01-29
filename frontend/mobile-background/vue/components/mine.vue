@@ -3,22 +3,22 @@
 
     <Tabs :animated="false">
       <!--  -->
-      <TabPane label="消息">
+      <TabPane icon="paper-airplane" label="消息">
         消息
       </TabPane>
 
       <!--  -->
-      <TabPane label="联系人">
+      <TabPane icon="person-stalker" label="联系人">
         联系人
       </TabPane>
 
       <!--  -->
-      <TabPane label="发现">
+      <TabPane icon="social-chrome" label="发现">
         发现
       </TabPane>
 
       <!--  -->
-      <TabPane label="我的">
+      <TabPane icon="happy-outline" label="我的">
         我的
       </TabPane>
 

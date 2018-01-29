@@ -6,17 +6,38 @@
         <Menu mode="horizontal" theme="dark" active-name="1" @on-select="onMenuSelect">
           <div class="layout-nav">
 
-            <MenuItem name="login">
+            <MenuItem name="first">
             <Icon type="ios-navigate"></Icon>
-            <router-link to="/mobile-background">微信</router-link>
+            <router-link to="/mobile-background">首页/微信</router-link>
+            </MenuItem>
+
+
+            <MenuItem name="hot">
+            <Icon type="ios-navigate"></Icon>
+            <router-link to="/mobile-background/hot">热点</router-link>
+            </MenuItem>
+
+            <MenuItem name="hire">
+            <Icon type="ios-navigate"></Icon>
+            <router-link to="/mobile-background/hire">招聘</router-link>
+            </MenuItem>
+
+            <MenuItem name="mall">
+            <Icon type="ios-navigate"></Icon>
+            <router-link to="/mobile-background/mall">商城</router-link>
+            </MenuItem>
+
+            <MenuItem name="mine">
+            <Icon type="ios-navigate"></Icon>
+            <router-link to="/mobile-background/mine">我的</router-link>
             </MenuItem>
 
           </div>
         </Menu>
       </Header>
 
-      <div style="margin-top:90px;background-color:#697c90;width:100%;height:100%;">
-        <router-view style="background-color:#C7C2B9;"></router-view>
+      <div style="margin-top:60px;background-color:#f1f1f1;width:100%;height:100%;">
+        <router-view></router-view>
       </div>
 
       <!-- <Footer class="layout-footer-center" style="padding:16px 10px;">2017-2018 &copy 所有解说权由【mgb】提供</Footer> -->
