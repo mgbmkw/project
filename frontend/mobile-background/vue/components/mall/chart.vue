@@ -1,8 +1,7 @@
 <template>
-  <div class="chart" id="chart">
+  <div class="chart">
 
-    <!-- <div id="chart" ref="chart" style="width: 550px height: 400px margin: 0 auto"></div> -->
-    <div id="test">
+    <div class="chartWrap">
       <XChart :id="id" :option="option"></XChart>
     </div>
   </div>
@@ -10,16 +9,16 @@
 
 <script>
 // 导入chart组件
-import XChart from './chart/chart1.vue'
+import XChart from './chart/chartLine.vue'
 // 导入chart组件模拟数据
-import chartOptions from './chart/option.js'
+import chartLineOption from './chart/chartLineOption.js'
 export default {
   name: 'chart',
   data() {
-    let option = chartOptions.bar
+    // let option = chartLineOption.bar
     return {
       id: 'test',
-      option: option
+      option: chartLineOption.bar
     }
   },
   components: {
@@ -29,8 +28,8 @@ export default {
 </script>
 
 <style scoped>
-#test {
-  width: 400px;
+.chartWrap {
+  /* width: 50%; */
   height: 400px;
   margin: 40px auto;
 }
