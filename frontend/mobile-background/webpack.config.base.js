@@ -28,7 +28,7 @@ var cssDir = path.resolve(__dirname, '..', '..', 'static', 'css');
 
 module.exports = {
   entry: {
-    vendor: ['vue', 'vue-router', 'axios', 'iview', 'better-scroll', 'vue-awesome-swiper'],
+    vendor: ['vue', 'vue-router', 'axios', 'iview', 'better-scroll', 'highcharts', 'vue-awesome-swiper'],
     cssVendor: ['bootstrap', 'iview-style', 'style'],
     app: ['./frontend/mobile-background/js/app.js']
   },

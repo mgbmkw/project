@@ -34,7 +34,7 @@
 
       <!--  -->
       <TabPane icon="stats-bars" label="图表分析">
-        图表分析
+        <chart></chart>
       </TabPane>
 
       <!--  -->
@@ -48,11 +48,12 @@ import otherInfo from './mall/otherInfo'
 import goodsList from './mall/goodsList'
 import addGoods from './mall/addGoods'
 import merchantActivities from './mall/merchantActivities'
+import chart from './mall/chart'
 
 export default {
   name: 'mall',
   components: {
-    merchantBasicInfo, otherInfo, goodsList, addGoods, merchantActivities
+    merchantBasicInfo, otherInfo, goodsList, addGoods, merchantActivities, chart
   },
   data() {
     return {

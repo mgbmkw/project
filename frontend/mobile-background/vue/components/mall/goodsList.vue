@@ -4,7 +4,7 @@
     <Table height="400" border size="small" :columns="columns1" :data="dataArrUse" :loading="loading"></Table>
     <div style="margin: 10px;overflow: hidden">
       <div style="float: right;">
-        <Page :total="dataArr.length" :page-size="pageSize" :current="1" @on-change="changePage"></Page>
+        <Page :total="dataArr.length" :page-size="pageSize" show-elevator :current="1" @on-change="changePage"></Page>
       </div>
     </div>
   </div>
@@ -73,6 +73,36 @@ export default {
         {
           title: 'Address',
           key: 'address'
+        },
+        {
+          title: 'Action',
+          key: 'action',
+          align: 'center',
+          fixed: 'right',
+          width: 150,
+          render: (h, params) => {
+            return h('div', {
+              // attrs: {
+              //   style: 'width:200px;'
+              // }
+            }, [
+                h('Button', {
+                  props: {
+                    type: 'primary',
+                    size: 'small'
+                  },
+                  attrs: {
+                    style: 'margin-right:10px;'
+                  }
+                }, '查看'),
+                h('Button', {
+                  props: {
+                    type: 'success',
+                    size: 'small'
+                  }
+                }, '修改')
+              ])
+          }
         }
       ],
       dataArr: [
