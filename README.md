@@ -28,24 +28,10 @@
 
 
 大概页面效果如下：↓↓<br/><br/>
-<h3>【mobile】页面</h3><br/>
-![01](https://github.com/mgbmkw/images/blob/master/mobile01.png)
-![02](https://github.com/mgbmkw/images/blob/master/mobile02.png)
-![03](https://github.com/mgbmkw/images/blob/master/mobile03.png)
-![04](https://github.com/mgbmkw/images/blob/master/mobile04.png)
-![05](https://github.com/mgbmkw/images/blob/master/mobile05.png)
-![06](https://github.com/mgbmkw/images/blob/master/mobile06.png)
-![07](https://github.com/mgbmkw/images/blob/master/mobile07.png)
-![08](https://github.com/mgbmkw/images/blob/master/mobile08.png)
-![09](https://github.com/mgbmkw/images/blob/master/mobile09.png)
-![10](https://github.com/mgbmkw/images/blob/master/mobile10.png)
+<h3>【mobile】页面</h3>
 
-<h3>【mobile-background】页面</h3><br/>
-![mobile-background1](https://github.com/mgbmkw/images/blob/master/mobile-background01.png)
-![mobile-background2](https://github.com/mgbmkw/images/blob/master/mobile-background02.png)
-![mobile-background3](https://github.com/mgbmkw/images/blob/master/mobile-background03.png)
-![mobile-background4](https://github.com/mgbmkw/images/blob/master/mobile-background04.png)
-![mobile-background5](https://github.com/mgbmkw/images/blob/master/mobile-background05.png)
-![mobile-background6](https://github.com/mgbmkw/images/blob/master/mobile-background06.png)
+![01](https://github.com/mgbmkw/images/blob/master/mobile01.png)![02](https://github.com/mgbmkw/images/blob/master/mobile02.png)![03](https://github.com/mgbmkw/images/blob/master/mobile03.png)![04](https://github.com/mgbmkw/images/blob/master/mobile04.png)![05](https://github.com/mgbmkw/images/blob/master/mobile05.png)![06](https://github.com/mgbmkw/images/blob/master/mobile06.png)![07](https://github.com/mgbmkw/images/blob/master/mobile07.png)![08](https://github.com/mgbmkw/images/blob/master/mobile08.png)![09](https://github.com/mgbmkw/images/blob/master/mobile09.png)![10](https://github.com/mgbmkw/images/blob/master/mobile10.png)
 
+<h3>【mobile-background】页面</h3>
 
+![mobile-background1](https://github.com/mgbmkw/images/blob/master/mobile-background01.png)![mobile-background2](https://github.com/mgbmkw/images/blob/master/mobile-background02.png)![mobile-background3](https://github.com/mgbmkw/images/blob/master/mobile-background03.png)![mobile-background4](https://github.com/mgbmkw/images/blob/master/mobile-background04.png)![mobile-background5](https://github.com/mgbmkw/images/blob/master/mobile-background05.png)![mobile-background6](https://github.com/mgbmkw/images/blob/master/mobile-background06.png)
