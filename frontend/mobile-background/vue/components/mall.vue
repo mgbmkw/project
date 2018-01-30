@@ -29,7 +29,16 @@
 
       <!--  -->
       <TabPane icon="happy-outline" label="经营情况">
-        经营情况
+        <Row>
+          <Col span="3">
+          <div id="qrcode"></div>
+          </Col>
+          <Col span="21">
+          <Input type="textarea" :autosize="false" placeholder="输入生成二维码" v-model="str" @on-keyup="reset(qrcode, str)"></Input>
+          <Input v-model="str" placeholder="输入生成二维码" @on-keyup="reset(qrcode, str)"></Input>
+          </Col>
+
+        </Row>
       </TabPane>
 
       <!--  -->
@@ -50,6 +59,7 @@ import addGoods from './mall/addGoods'
 import merchantActivities from './mall/merchantActivities'
 import chart from './mall/chart'
 
+import QRCode from 'qrcodejs2'
 export default {
   name: 'mall',
   components: {
@@ -57,10 +67,31 @@ export default {
   },
   data() {
     return {
-
+      str: '',
+      qrcode: null
     }
   }, methods: {
+    createQrcode(str) {
+      var qrcode = new QRCode('qrcode', {
+        text: str,
+        width: 100,
+        height: 100,
+        colorDark: '#000000',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+      })
+      return qrcode
+    },
+    reset(qrcode, str) {
+      qrcode.clear()
+      qrcode.makeCode(str)
+    }
+  },
 
+  mounted() {
+    // new QRCode(document.getElementById('qrcode'), 'your content');
+    var qrcode = this.createQrcode('input')
+    this.qrcode = qrcode
   }
 }
 </script>

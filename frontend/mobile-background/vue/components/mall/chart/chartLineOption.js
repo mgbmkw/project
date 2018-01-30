@@ -1,12 +1,12 @@
 module.exports = {
-  // chart: {
-  //   type: 'column' //指定图表的类型，默认是折线图（line）
-  // },
+  chart: {
+    type: 'column' // 指定图表的类型，默认是折线图（line）/
+  },
   credits: {
     enabled: false
-  }, //去掉地址
+  }, // 去掉地址
   title: {
-    text: '商家【周】营业额'
+    text: '商家【一周】营业额'
   },
   subtitle: {
     text: '参考数据分析营业情况'
@@ -14,9 +14,9 @@ module.exports = {
   tooltip: {
     valueSuffix: '元'
   },
-  colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5'],
+  colors: ['#058DC7', '#50B432', '#ED561B', '#DDDF00', '#24CBE5', '#3E82F7', '#E37526', '#07DB00'],
   xAxis: {
-    categories: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'] //指定x轴分组
+    categories: ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'] // 指定x轴分组
   },
   yAxis: {
     title: {
@@ -35,7 +35,7 @@ module.exports = {
     tickInterval: 10000
   },
   legend: {
-    // layout: 'horizontal',
+    //  layout: 'horizontal',
     layout: 'vertical',
     align: 'right',
     verticalAlign: 'middle',
