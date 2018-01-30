@@ -1,13 +1,12 @@
 <template>
-  <div>
-    <p class="x-bar">
-      <p :id="id" :option="option"></p>
-    </p>
+  <div class="chartComponents">
+    <div :id="id" :option="option"></div>
   </div>
 </template>
 <script>
 import HighCharts from 'highcharts'
 export default {
+  name: 'chartComponents',
   // 验证类型
   props: {
     id: {
@@ -18,7 +17,9 @@ export default {
     }
   },
   mounted() {
+
     HighCharts.chart(this.id, this.option)
+
   }
 }
 </script>

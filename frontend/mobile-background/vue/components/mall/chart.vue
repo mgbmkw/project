@@ -18,7 +18,7 @@ export default {
     // let option = chartLineOption.bar
     return {
       id: 'test',
-      option: chartLineOption.bar
+      option: chartLineOption
     }
   },
   components: {
