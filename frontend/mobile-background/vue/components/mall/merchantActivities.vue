@@ -9,7 +9,7 @@
         </FormItem> -->
         </Col>
       </Row>
-      <Button type="ghost" @click="add" style="margin-left: 8px">试验</Button>
+      <Button type="ghost" @click style="margin-left: 8px">试验</Button>
     </Form>
     <p class="">现在的数字是： 0</p>
   </div>
@@ -38,9 +38,13 @@ export default {
       }
     }
   },
-  methods: {
-
-  }
+  // methods: {
+  //   abc() {
+  //     let arr = [1, 2.3]
+  //     let arr1 = [...arr, 666]
+  //     console.log(arr1)
+  //   }
+  // }
   // methods: mapActions(['add'])
 }
 </script>
