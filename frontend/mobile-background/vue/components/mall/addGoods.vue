@@ -64,7 +64,7 @@
 
       <FormItem>
         <Button type="primary" @click="handleSubmit('formVal')">Submit</Button>
-        <!-- <Button type="ghost" @click="handleReset('formValidate')" style="margin-left: 8px">Reset</Button> -->
+        <Button type="ghost" @click="" style="margin-left: 8px">试验</Button>
       </FormItem>
 
     </Form>
@@ -89,6 +89,7 @@ export default {
         ],
         productPrice: [
           { required: true, message: '价格不能为空', trigger: 'blur' },
+          { validator: this.re_productPrice, message: '只能为数字' }
         ],
         intro: [
           { required: true, message: '介绍内容不能为空', trigger: 'blur' },
@@ -145,6 +146,13 @@ export default {
           this.$Message.error('Fail!');
         }
       })
+    },
+    re_productPrice(rule, value, callback) {
+      if (!Number.isInteger(+value)) {
+        callback(new Error('产品价格必须是数字'))
+      } else {
+        callback()
+      }
     }
   }
 }

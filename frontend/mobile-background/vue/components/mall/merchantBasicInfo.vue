@@ -54,6 +54,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'merchantBasicInfo',
   data() {
@@ -90,7 +91,8 @@ export default {
       valueText: 3,
       valueCustomText: 3.6
     }
-  }, methods: {
+  },
+  methods: {
     re_phone(rule, value, callback) {
       if (!/^1[3-8]{1}[0-9]{9}$/.test(+value)) {
         callback(new Error('请输入11位手机号'))
