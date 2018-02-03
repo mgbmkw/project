@@ -7,11 +7,12 @@
         <!-- <FormItem label="活动">
           <Input size="small" v-model="formVal.input8"></Input>
         </FormItem> -->
+        <p class="">使用的是Vuex，现在的globalNum是： {{$store.state.globalNum}}</p>
         </Col>
       </Row>
-      <Button type="ghost" @click style="margin-left: 8px">试验</Button>
+      <Button type="ghost" @click="$store.commit('add', $store.state.globalNum)">加1</Button>
+      <Button type="primary" @click="$store.commit('minus', $store.state.globalNum)">减1</Button>
     </Form>
-    <p class="">现在的数字是： 0</p>
   </div>
 </template>
 

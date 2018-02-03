@@ -137,7 +137,8 @@ export default {
         }
       ],
     }
-  }, methods: {
+  }, 
+  methods: {
     handleSubmit(name) {
       this.$refs[name].validate((valid) => {
         if (valid) {
