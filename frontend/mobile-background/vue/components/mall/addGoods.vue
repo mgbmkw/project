@@ -5,7 +5,7 @@
       <Row>
         <Col span="8">
         <FormItem label="商品名称" prop="productName">
-          <Input size="small" v-model="formVal.productName"></Input>
+          <Input size="small" v-model="formVal.productName" :placeholder="String($store.state.globalNum)"></Input>
         </FormItem>
         <FormItem label="所属类型" prop="productType">
           <!-- <Select size="small" v-model="formVal.productType" :transfer="true" placeholder="选择商品的所属类型" @on-change> -->
@@ -137,7 +137,7 @@ export default {
         }
       ],
     }
-  }, 
+  },
   methods: {
     handleSubmit(name) {
       this.$refs[name].validate((valid) => {
