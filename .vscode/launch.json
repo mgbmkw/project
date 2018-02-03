@@ -8,12 +8,12 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceRoot}/backend/js/app.js",
+      "program": "${workspaceRoot}/backend/ES6/js/app.js",
       "env": {
         "NODE_ENV": "dev",
         "port": "3000",
         "baseUrl": "//127.0.0.1:3000",
-        "projectName": "TypeScript"
+        "projectName": "ES6"
       }
     }
   ]
