@@ -61,8 +61,8 @@ app.engine('html', swig.renderFile)
 
 
 // 设置：静态资源路径
-app.use('/static', express.static(path.join(__dirname, '..', '..', 'static')))
-app.use('/uploads', express.static(path.join(__dirname, '..', '..', 'uploads')))
+app.use('/static', express.static(path.join(dirRoot, 'static')))
+app.use('/uploads', express.static(path.join(dirRoot, 'uploads')))
 
 
 
