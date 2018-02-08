@@ -7,7 +7,19 @@ let help = {
         callback()
       }
     }
+  },
+  randomString(length) {
+    let str = "abcdefghijklmnopqrstuvwxyz0123456789"
+    let returnStr = ""
+
+    while (length-- > 0) {
+      returnStr += str[Math.floor(Math.random() * str.length)]
+    }
+    return returnStr
   }
 }
+
+
+
 
 module.exports = help

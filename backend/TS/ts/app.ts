@@ -10,7 +10,7 @@ import * as swig from 'swig'
 
 let abc: abc100.myLib = {
   name: '',
-  length: 666
+  length: 6666666
 }
 
 function fn(str: string, num ? : number): string {
@@ -18,4 +18,18 @@ function fn(str: string, num ? : number): string {
 }
 console.log(abc)
 fn('789')
-console.log(fn('kkk'))
+console.log(fn('kkkvvv'))
+
+
+myLib.timeout = 50
+var s: myLib.CatSettings = {
+  weight: 5,
+  name: "Maru"
+}
+const v: myLib.VetID = 100
+
+const abcd: myLib1009.subProp.someType = {
+  name100: ''
+}
+
+const ab: myLib.version = '666'
