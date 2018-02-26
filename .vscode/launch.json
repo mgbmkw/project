@@ -4,33 +4,33 @@
   // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceRoot}/backend/TS/ts/app.ts",
-      "outFiles": [
-        "${workspaceRoot}/backend/TS/js/app.js"
-      ],
-      "env": {
-        "NODE_ENV": "dev",
-        "port": "3000",
-        "baseUrl": "//127.0.0.1:3000",
-        "projectName": "TypeScript"
-      }
-    }
-    // ,
     // {
     //   "type": "node",
     //   "request": "launch",
     //   "name": "Launch Program",
-    //   "program": "${workspaceRoot}/backend/ES6/js/app.js",
+    //   "program": "${workspaceRoot}/backend/TS/ts/app.ts",
+    //   "outFiles": [
+    //     "${workspaceRoot}/backend/TS/js/app.js"
+    //   ],
     //   "env": {
     //     "NODE_ENV": "dev",
     //     "port": "3000",
     //     "baseUrl": "//127.0.0.1:3000",
-    //     "projectName": "ES6"
+    //     "projectName": "TypeScript"
     //   }
     // }
+    // ,
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceRoot}/backend/ES6/js/app.js",
+      "env": {
+        "NODE_ENV": "dev",
+        "port": "3000",
+        "baseUrl": "//127.0.0.1:3000",
+        "projectName": "ES6"
+      }
+    }
   ]
 }

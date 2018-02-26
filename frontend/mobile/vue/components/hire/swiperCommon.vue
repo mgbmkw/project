@@ -3,7 +3,7 @@
 
     <swiper :options="swiperOption" ref="mySwiper" style="height:200px;">
       <swiper-slide v-for="(item, key) in arr" :key="key">
-        <a href="javascript://"><img :src="item.src" alt="图片名" /></a>
+        <a href="javascript://" style="display:block;text-align:center;"><img :src="item.src" alt="图片名" /></a>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination" style="width:100%;"></div>
     </swiper>
@@ -32,7 +32,7 @@ export default {
         speed: 400,
         autoplay: {
           disableOnInteraction: false,
-          delay: 6000
+          delay: 60000000
         }
       },
       arr: [{
